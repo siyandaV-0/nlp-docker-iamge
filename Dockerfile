@@ -31,7 +31,7 @@ ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 COPY ./dependencies/nlp-requirements.txt ./
 
 #Install requirements for our nlp work env
-RUN pip3 install --upgrade-strategy only-if-needed -r nlp-requirements.txt --ignore-installed numpy
+RUN pip3 install -r nlp-requirements.txt
 RUN python3 -m spacy download en_core_web_sm
 RUN python3 -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')"
 
