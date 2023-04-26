@@ -44,6 +44,5 @@ torchvision
 tensorflow
 tqdm
 transformers
-accelerate
 
 
