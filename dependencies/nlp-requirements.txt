@@ -18,7 +18,6 @@ yellowbrick
 plotly
 sentencepiece
 beautifulsoup4
-bertopic
 elasticsearch
 emoji
 farm-haystack
