@@ -18,7 +18,6 @@ sentencepiece
 beautifulsoup4
 bertopic
 hdbscan
-contractions
 elasticsearch
 emoji
 farm-haystack
