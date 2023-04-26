@@ -14,15 +14,21 @@ yellowbrick
 plotly
 jupyter
 jupyterlab 
-ipykernel 
-ipywidgets
+sentencepiece
+beautifulsoup4
 bertopic
+contractions
+dask
 elasticsearch
+emoji
 farm-haystack
 flair
+gensim
+hdbscan
+inflect
 nltk
-spacy
-spacy-transformers
+spacy==3.4.4
+spacy-transformers==1.1.9
 textblob
 wordcloud
 fastapi
@@ -39,5 +45,6 @@ torchvision
 tensorflow
 tqdm
 transformers
+accelerate
 
 
