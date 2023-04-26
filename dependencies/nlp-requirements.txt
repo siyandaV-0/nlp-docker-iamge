@@ -16,14 +16,15 @@ matplotlib
 seaborn
 yellowbrick
 plotly
-sentencepiece
-beautifulsoup4
+transformers
 bertopic
 hdbscan
 emoji
 farm-haystack
 flair
 gensim
+sentencepiece
+beautifulsoup4
 inflect
 nltk
 spacy==3.4.4
@@ -42,7 +43,6 @@ torchaudio
 torchvision
 tensorflow
 tqdm
-transformers
 contractions
 
 
