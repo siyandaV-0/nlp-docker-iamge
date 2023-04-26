@@ -26,6 +26,7 @@ Our working Directory is structured as follows:
     │   ├── nlp-requirements.txt
     │   └── ubuntu-deps.sh
     ├── Code
+    │   ├── model_pipeline.py
     │   └── pretrained_seq_clf.ipynb    
     ├── Dockerfile
     ├── docker-compose.yml
