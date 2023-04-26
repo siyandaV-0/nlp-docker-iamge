@@ -16,14 +16,9 @@ matplotlib
 seaborn
 yellowbrick
 plotly
-sentencepiece
-beautifulsoup4
-elasticsearch
-emoji
 farm-haystack
 flair
 gensim
-inflect
 nltk
 spacy==3.4.4
 spacy-transformers==1.1.9
