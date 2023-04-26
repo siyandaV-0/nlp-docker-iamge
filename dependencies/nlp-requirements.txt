@@ -19,7 +19,6 @@ plotly
 sentencepiece
 beautifulsoup4
 bertopic
-hdbscan
 elasticsearch
 emoji
 farm-haystack
