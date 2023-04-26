@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  nlp-env:
+    image: nlp-env:latest
+    build: .
+    environment:
+      - USERNAME="container_user"
+      - CHOWN_HOME=yes
+    volumes:
+      - '${PWD}/Code:/app'                # Attach our Code folder
+    user: ${USERNAME}    
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    ports:
+      - 8181:8888   # Our jupyter-lab/notebook will be accessible on port 8181
+    tty: true
+    stdin_open: true
