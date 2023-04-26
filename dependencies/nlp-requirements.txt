@@ -19,7 +19,6 @@ ipywidgets
 sentencepiece
 beautifulsoup4
 bertopic
-contractions
 dask
 elasticsearch
 emoji
