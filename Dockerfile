@@ -27,9 +27,9 @@ ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:$LD_LIBRARY_PATH
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 #Install requirements for our nlp work env
-RUN pip3 install -r nlp-requirements.txt
-RUN ${PYTHON} -m spacy download en_core_web_sm
-RUN ${PYTHON} -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')"
+RUN pip3 install --upgrade-strategy only-if-needed -r nlp-requirements.txt --ignore-installed numpy
+RUN python3 -m spacy download en_core_web_sm
+RUN python3 -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')"
 
 # Jupyter-lab localhost runs on port 8888
 EXPOSE 8888 
