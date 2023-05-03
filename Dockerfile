@@ -1,5 +1,8 @@
 FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu22.04
 
+# Set Working Directory
+WORKDIR /app
+
 # Set non-interactive mode 
 ENV DEBIAN_FRONTEND=noninteractive 
 
@@ -22,10 +25,6 @@ COPY ./dependencies/nlp-requirements.txt ./
 RUN pip3 install -r nlp-requirements.txt
 RUN python3 -m spacy download en_core_web_sm
 RUN python3 -c "import nltk; nltk.download('stopwords'); nltk.download('punkt')"
-
-
-# Set Working Directory
-WORKDIR /app
 
 # Jupyter-lab localhost runs on port 8888
 EXPOSE 8888 
