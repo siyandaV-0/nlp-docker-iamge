@@ -34,7 +34,7 @@ EXPOSE 8888
 # For better container security use create user
 # On the server we are working on UID is 1006:
 ARG USERNAME=container_user
-ARG USER_UID=1006             
+ARG USER_UID=1000             
 ARG USER_GID=$USER_UID
 
 RUN groupadd --gid $USER_GID $USERNAME \
