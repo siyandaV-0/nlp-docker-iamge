@@ -42,5 +42,5 @@ EXPOSE 8888
 # USER $USERNAME
 
 # We shall port map the 8888 to port 8181 on a server called bluecrane:
-CMD ["bash", "-c", "jupyter-lab --ip 0.0.0.0 --no-browser --notebook-dir=/app --allow-root --NotebookApp.custom_display_url='http://bluecrane:8181'"]
+CMD ["bash", "-c", "source /etc/bash.bashrc && jupyter-lab --ip 0.0.0.0 --no-browser --notebook-dir=/app --allow-root --NotebookApp.custom_display_url='http://bluecrane:8181'"]
 
